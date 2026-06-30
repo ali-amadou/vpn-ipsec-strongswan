@@ -102,8 +102,8 @@ conn site-b-to-a
 
 **`/etc/ipsec.secrets`** (identical on both sites)
 ```
-10.0.2.16 10.0.2.15 : PSK "MonTPSECu2025"
-10.0.2.15 10.0.2.16 : PSK "MonTPSECu2025"
+10.0.2.16 10.0.2.15 : PSK "CHANGE_ME_BEFORE_PUSHING"
+10.0.2.15 10.0.2.16 : PSK "CHANGE_ME_BEFORE_PUSHING"
 ```
 
 > ⚠️ The PSK above is the lab value — never reuse a shared secret like this in any real deployment. Use a long random key or switch to certificate-based authentication for production.
